@@ -29,19 +29,19 @@ parser.add_argument('-layers', type=int, default=1,
 parser.add_argument('-rnn_size', type=int, default=400,
                     help='Size of LSTM hidden states')
 parser.add_argument('-extra_hidden_size', type=int, default=50,
-                    help='Size of LSTM hidden states')
+                    help='Size of extra hiden')
 parser.add_argument('-word_size', type=int, default=100,
                     help='Word embedding sizes')
 parser.add_argument('-user_size', type=int, default=50,
-                    help='Word embedding sizes')
+                    help='User embedding sizes')
 parser.add_argument('-session_size', type=int, default=20,
-                    help='Word embedding sizes')
+                    help='Seesion embedding sizes')
 parser.add_argument('-format_size', type=int, default=20,
-                    help='Word embedding sizes')
+                    help='Format embedding sizes')
 parser.add_argument('-pos_size', type=int, default=20,
-                    help='Word embedding sizes')
+                    help='Pos embedding sizes')
 parser.add_argument('-bptt', type=int, default=18,
-                    help='Word embedding sizes')
+                    help='')
 parser.add_argument('-brnn', action='store_false',
                     help='Use a bidirectional encoder')
 parser.add_argument('-time_step', action='store_true',
@@ -57,7 +57,7 @@ parser.add_argument('-param_init', type=float, default=0.1,
                     help="""Parameters are initialized over uniform distribution
                     with support (-param_init, param_init)""")
 parser.add_argument('-emb_init', action="store_true",
-                    help="""aaa""")
+                    help="")
 #parser.add_argument('-optim', default='sgd',
 #parser.add_argument('-optim', default='adam',
 parser.add_argument('-optim', default='adadelta',

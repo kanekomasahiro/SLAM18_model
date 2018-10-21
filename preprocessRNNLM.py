@@ -18,11 +18,11 @@ parser = argparse.ArgumentParser(description='preprocess.py')
 parser.add_argument('-config',    help="Read options from this file")
 
 parser.add_argument('-train_data', required=True,
-                    help="Path to the training source data")
+                    help="Path to the training data")
 parser.add_argument('-valid_data', required=True,
-                    help="Path to the validation source data")
+                    help="Path to the validation data")
 parser.add_argument('-valid_key', required=True,
-                    help="Path to the validation source data")
+                    help="Path to the key of validation data")
 parser.add_argument('-lang', default='en_w2v',
                     help="Language. [en_w2v|en_fast|es|fr]")
 
@@ -30,15 +30,15 @@ parser.add_argument('-save_data', required=True,
                     help="Output file for the prepared data")
 
 parser.add_argument('-vocab_size', type=int, default=40000,
-                    help="Size of the source vocabulary")
+                    help="Size of the vocabulary")
 parser.add_argument('-minimum_freq', type=int, default=0,
-                    help="Size of the source vocabulary")
+                    help="")
 
 parser.add_argument('-batch_size', type=int, default=32,
                     help="Maximum batch size")
-parser.add_argument('-shuffle',    type=int, default=1,
+parser.add_argument('-shuffle', type=int, default=1,
                     help="Shuffle data")
-parser.add_argument('-seed',       type=int, default=1001,
+parser.add_argument('-seed', type=int, default=1001,
                     help="Random seed")
 
 parser.add_argument('-lower', action='store_true', help='lowercase data')
